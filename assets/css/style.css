@@ -1,0 +1,777 @@
+/* Основные стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Основной стиль для шапки */
+header {
+    background-color: #333; /* Темный фон */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+/* Общие стили для страницы */
+.about, .stats {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки разделов */
+.about h2, .stats h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Стиль для абзацев в разделе "О компании" */
+.about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Статистика */
+.stats ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stats li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.stats li strong {
+    font-size: 1.2rem;
+    color: #0056b3;
+    margin-left: 8px;
+}
+
+/* Иконки в статистике */
+.stats li::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background-size: contain;
+}
+
+/* Иконки для каждого пункта статистики */
+.stats li:nth-child(1)::before {
+    background-image: url('https://img.icons8.com/ios/50/000000/line-chart.png');
+}
+
+.stats li:nth-child(2)::before {
+    background-image: url('https://img.icons8.com/ios/50/000000/group-of-users.png');
+}
+
+.stats li:nth-child(3)::before {
+    background-image: url('https://img.icons8.com/ios/50/000000/trophy.png');
+}
+
+/* Стили для формы подачи заявки */
+.form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+select, textarea, input[type="tel"], button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стиль для успешного сообщения */
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+/* Стиль для ошибок */
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+/* Стиль для чекбокса и номера телефона */
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#phone_input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Стиль для списка новостей */
+.news-list {
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.news-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.news-item .date {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.news-item .toggle-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.news-item .toggle-btn:hover {
+    background-color: #45a049;
+}
+
+.news-item .news-text {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Стиль для формы добавления новости */
+.form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form button:hover {
+    background-color: #45a049;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1em;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #4CAF50, #81C784);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero .btn:hover {
+    background-color: #81C784;
+    color: white;
+}
+
+/* Info Section */
+.info {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Links Section */
+.links {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.links h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+/* Общие стили для Личного кабинета */
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Блоки заявок и договоров */
+.request-block, .contract-block {
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.request-block:hover, .contract-block:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Кнопка переключения деталей */
+.toggle-btn {
+    font-size: 1.1em;
+    cursor: pointer;
+    color: #0056b3;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    color: #003366;
+    text-decoration: underline;
+}
+
+/* Открытые детали */
+.details {
+    display: none;
+    padding-top: 10px;
+    color: #555;
+}
+
+.details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details th, .details td {
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    font-size: 0.95em;
+    color: #666;
+}
+
+.details th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+.details td {
+    background-color: #fafafa;
+}
+
+.details .status {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.details .status.approved {
+    color: #28a745;
+}
+
+.details .status.pending {
+    color: #ffc107;
+}
+
+.details .status.rejected {
+    color: #dc3545;
+}
+
+
+/* Кнопка для создания новой заявки */
+.btn-create-request {
+    display: inline-block;
+    padding: 8px 20px; /* Уменьшено с 12px до 8px */
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em; /* Уменьшен размер шрифта */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px; /* Меньше отступ сверху */
+}
+
+.btn-create-request:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-create-request:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+/* Стиль страницы контактов */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Галерея */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+/* Закрытие кнопки */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Модальное изображение */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Закрытие кнопки */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Стили для контейнера с формой */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Заголовок */
+.auth-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стили для элементов формы */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+
+/* Кнопка входа */
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #00408d;
+}
+
+/* Ссылки */
+.register-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.register-link a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Сообщение об ошибке */
+.error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form button:active {
+    background-color: #004085;
+}
+
+/* Стиль для сообщений об успешной и неудачной отправке */
+.success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
